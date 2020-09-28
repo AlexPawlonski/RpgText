@@ -1,17 +1,93 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './style.css';
+import Moteur from './Class/moteur.js'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            name: "",
+            result: "",
+            save: 0,
+        }
+    }
+/*
+    initSav = () => {
+        var save = this.state.save
+        var name = this.state.name
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "php/Model.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send("save=" + escape(save) + "name=" + escape(name));
+    }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+*/
+    envoi = (e) =>{
+        console.log(this.state.save);
+        
+        /*if(this.state.save == 0){
+            this.loadDoc()
+        }else{*/
+            var input = e.newItemValue.toString()
+            if(this.state.name == ""){
+                this.setState({
+                    name: input,
+                    result: input,
+                })
+            }else{
+                this.setState({
+                    result: input,
+                })   
+            }
+        /*}*/
+        
+             
+    };
+
+    save = (e)=>{
+        var inputSave = parseInt(e.save.toString());
+        if(e){
+            console.log(inputSave);
+            this.setState({
+                save: this.state.save+inputSave
+            })
+        }
+    }
+
+    render() {
+        return (
+            <div id="wrapper">
+                <h1>Bienvenu dans RpgTexter</h1>
+                <section id ="main">
+                    <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
+                </section>
+                <Input envoi = {this.envoi} />
+                
+            </div> 
+        );
+    }
+} 
+
+
+class Input extends React.Component{
+
+    onPush = (event) => {
+        if(event.keyCode == 13){
+            var newItemValue = this.refs.inputName.value;
+            this.props.envoi({newItemValue}) 
+            this.refs.inputName.value = '';
+        }
+    }
+    render(){
+        return(
+            <div>
+                <label>=></label>
+                <input id="input" ref="inputName" onKeyDown={this.onPush}></input> 
+            </div>
+        );
+    }
+}
+
+
+ReactDOM.render( <App />, document.getElementById('root'));

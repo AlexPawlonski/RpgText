@@ -1,0 +1,72 @@
+/*::::::::::::::::::::::::::::::::GENERAL:::::::::::::::::::::::::::::::::::::::::::::*/
+body{
+    margin: 0;
+    padding: 0;
+    color: chartreuse;
+    background-color: rgb(110, 110, 110);
+    font-family: "initialFont";
+    background-color: rgb(20, 20, 20);
+}
+#wrapper{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+    max-width: 1200px;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+p{
+    display: inline;
+}
+@font-face {
+	font-family: "initialFont";
+	src: url('data/font/Minecraft.ttf');
+}
+@font-face {
+    font-family: "UpFont";
+	src: url('data/font/Upcase.ttf');
+}
+
+.Name{
+    font-family: "Upfont" ;
+}
+/*:::::::::::::::::::::::::::::ZONE INPUT ::::::::::::::::::::::::::::::::::::::::::::::*/
+#input label{
+    padding: 0 3px ;
+}
+
+#input{
+    font-size: 20px;
+    font-family: "initialFont";
+    color: chartreuse;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    width: 95%;
+}
+*:focus {
+
+    outline: none;
+    
+    }
+    
+    *::-moz-focus-inner {
+    
+    border: none;
+    
+    }
+/*::::::::::::::::::::::::::::::::::Main :::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#main{
+    padding: 3px;
+    margin: 10px 0px;
+}
