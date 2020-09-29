@@ -309,7 +309,8 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous vous écrater de l'homme, passant a coter sans le regarder </li>
+                    <li>Vous vous écrater de l'homme, passant a coter sans le regarder. il vous regadait avec un hère dubitatif 
+                    puis il marmona un truc incontréhensible sur une famille et une sertène coureuse de renpare.</li>
                 </ul>
             );
 
@@ -371,7 +372,7 @@ class Moteur extends React.Component{
             let index113 = ['fuit', 'fui', 'part', 'partir', 'éloigne', 'cour', 'courir', 'éloignier', 'écarter', 'écarte']
             index113.forEach(element => {
                 if(input.includes(element)){
-                    let save = 1;
+                    let save = -2;
                     this.props.fSave({save}); 
                 }
             });

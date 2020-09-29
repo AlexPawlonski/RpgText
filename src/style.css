@@ -17,7 +17,7 @@ p{
     margin: 0;
 }
 h1{
-    margin: 0;
+    margin: 5px;
     text-align: center;
     text-decoration: underline;
 }
@@ -69,4 +69,12 @@ p{
 #main{
     padding: 3px;
     margin: 10px 0px;
+    width: 100%;
+}
+
+/*::::::::::::::::::::::::::::::::::IMG::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#imgContext{
+    width: 70%;
+    margin: 10px auto;
+    display: block;
 }

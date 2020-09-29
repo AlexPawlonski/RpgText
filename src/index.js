@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import Moteur from './Class/moteur.js'
+import Image from './img/image.js'
 
 class App extends React.Component {
     constructor(props){
@@ -60,6 +61,7 @@ class App extends React.Component {
             <div id="wrapper">
                 <h1>Bienvenu dans RpgTexter</h1>
                 <section id ="main">
+                    <Image save={this.state.save}/>
                     <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
                 </section>
                 <Input envoi = {this.envoi} />
