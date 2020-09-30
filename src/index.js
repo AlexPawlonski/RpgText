@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import Moteur from './Class/moteur.js'
 import Image from './img/image.js'
-import Music from './song/song.js'
+//import Music from './song/song.js'
 
 class App extends React.Component {
     constructor(props){
@@ -12,7 +12,7 @@ class App extends React.Component {
             name: "",
             result: "",
             save: 0,
-            mute: 'off',
+            //mute: 'off',
         }
     }
 /*
@@ -57,7 +57,7 @@ class App extends React.Component {
             })
         }
     }
-
+/*
     mute = () =>{
         if (this.state.mute == "on") {
             this.setState({
@@ -69,11 +69,12 @@ class App extends React.Component {
             })
         }
     }
-
+    <Music save={this.state.save} volume={this.state.mute} fMute={this.mute} />
+*/
     render() {
         return (
             <div id="wrapper">
-                <h1>Bienvenu dans RpgTexter</h1> <Music save={this.state.save} />
+                <h1>Bienvenu dans RpgTexter</h1> 
                 <section id ="main">
                     <Image save={this.state.save}/>
                     <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>

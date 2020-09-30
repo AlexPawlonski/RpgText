@@ -319,7 +319,7 @@ class Moteur extends React.Component{
         if(this.props.save == 10){
             let input = this.props.result
 
-            let index111 = ['oui', 'suis', 'nom', 'mon', 'prenom', this.props.name, 'raison']
+            let index111 = ['oui', 'mon', 'prenom', this.props.name, 'raison']
             index111.forEach(element => {
                 if(input.includes(element)){
                     let save = 1;
@@ -355,11 +355,11 @@ class Moteur extends React.Component{
         if(this.props.save == 11){
             let input = this.props.result
 
-            let index111 = ['oui', 'suis', 'nom', 'mon', 'prenom', this.props.name, 'raison']
+            let index111 = ['oui', 'suis', 'nom', 'mon', 'prenom', 'raison']
             index111.forEach(element => {
                 if(input.includes(element)){
                     let save = 1;
-                    this.props.fSave({save}); 
+                    this.props.fSave({save});
                 }
             });
             let index112 = ['non', 'regarde ','pas', 'je ne', 'adieux']
