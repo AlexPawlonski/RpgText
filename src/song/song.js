@@ -5,15 +5,30 @@ import icon1 from './icon1.png';
 import icon2 from './icon2.png';
 
 class Music extends React.Component {
+    constructor(props){
+        super(props)
+        this.url={song : song1}
+        this.audio = new Audio(this.url.song);
+    }
+    
     
     render() {
-        if(this.props.volume == 'off'){
+        console.log(this.url);
+        if (this.props.save <= 5) {
+            this.url.song = song1
+        }else{
+            this.url.song = song2 
+        }
+
+        if(this.props.volume == true){
+            this.audio.pause();
             return (
-                <img onClick={this.props.fMute()} id='iconsong' src={icon2}/>
+                <img onClick={this.props.fvolume} id='iconsong' src={icon1}/>
             );
-        }else if(this.props.volume == 'on'){
+        }else{
+            this.audio.play();
             return (
-                <img onClick={this.props.fMute()} id='iconsong' src={icon1}/>
+                <img onClick={this.props.fvolume} id='iconsong' src={icon2}/>
             );
         } 
     }

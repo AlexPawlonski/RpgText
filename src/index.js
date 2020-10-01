@@ -4,10 +4,9 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import Moteur from './Class/moteur.js'
 import Image from './img/image.js'
-import Header from './img/header.js'
+import Header from './header.js'
 import * as firebase from 'firebase'
 import config from './database/firebase.js'
-//import Music from './song/song.js'
 
 class App extends React.Component {
     constructor(props){
@@ -15,8 +14,8 @@ class App extends React.Component {
         this.state = {
             name: "",
             save: 0, 
-            result: "", 
-            //mute: 'off',
+            result: "",
+            volume : true,
         }
         firebase.initializeApp(config);
         const userRef = firebase.database().ref();
@@ -85,10 +84,23 @@ class App extends React.Component {
         }
     }
 
+    volume = () =>{
+        console.log(this.state.volume);
+        if(this.state.volume == true){
+            this.setState({
+                volume : false
+            })
+        }else{
+            this.setState({
+                volume : true
+            })
+        }
+    }
+
     render() {
         return (
             <div id="wrapper">
-                <Header fInitSav = {this.initSav} fLoadSav = {this.loadSav} />
+                <Header fInitSav = {this.initSav} fLoadSav = {this.loadSav} fvolume ={this.volume} volume = {this.state.volume} save={this.state.save}/>
                 <section id ="main">
                     <Image save={this.state.save}/>
                     <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
