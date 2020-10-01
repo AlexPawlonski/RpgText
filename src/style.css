@@ -1,94 +1,181 @@
 /*::::::::::::::::::::::::::::::::GENERAL:::::::::::::::::::::::::::::::::::::::::::::*/
-body{
+body {
     margin: 0;
     padding: 0;
     color: #00FF00;
     background-color: rgb(110, 110, 110);
     font-family: "initialFont";
     background-color: rgb(20, 20, 20);
+    font-size: 15px;
+    cursor: text;
 }
-#wrapper{
+
+#wrapper {
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     background-color: rgb(20, 20, 20);
     max-width: 1200px;
 }
-p{
+
+p {
     margin: 0;
 }
-h1{
-    margin: 5px;
+
+h1 {
+    margin: 0;
     text-align: center;
     text-decoration: underline;
     display: flex;
     align-items: center;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-p{
+
+p {
     display: inline;
 }
+
 @font-face {
-	font-family: "initialFont";
-	src: url('data/font/Minecraft.ttf');
-}
-@font-face {
-    font-family: "UpFont";
-	src: url('data/font/Upcase.ttf');
+    font-family: "initialFont";
+    src: url('data/font/Minecraft.ttf');
 }
 
-.Name{
-    font-family: "Upfont" ;
+@font-face {
+    font-family: "UpFont";
+    src: url('data/font/Upcase.ttf');
+}
+
+.Name {
+    font-family: "Upfont";
+}
+/*:::::::::::::::::::::::::::::DESSIN::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#mainP{
+    border: #00FF00 3px solid;
+    padding: 30px 30px 50px 50px ;
+    
+}
+
+#main2{
+    border: #00FF00 3px solid;
+    padding: 30px; 
+    
+}
+#right{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#disquette{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ligne{
+    border: #00FF00 3px solid;
+    background-color: #00FF00;
+    width: 35%;
+    height: 15px;
+}
+.carre{
+    border: #00FF00 3px solid;
+    background-color: #00FF00;
+    width:20%;
+    height: 40px;
+}
+#logopc{
+    border: #00FF00 3px solid;
+    width: 50px;
+    height: 50px;
+    
 }
 /*:::::::::::::::::::::::::::::HEADER :::::::::::::::::::::::::::::::::::::::::::::::::::*/
-header{
+
+header {
     display: flex;
     justify-content: space-between;
 }
+
+
 /*:::::::::::::::::::::::::::::ZONE INPUT ::::::::::::::::::::::::::::::::::::::::::::::*/
-#input label{
-    padding: 0 3px ;
+
+label {
+    padding: 0 3px;
+    font-size: 22px;
 }
 
-#input{
+#input {
     font-size: 20px;
     font-family: "initialFont";
     color: #00FF00;
     background-color: rgb(20, 20, 20);
     border: none;
-    width: 95%;
+    width: 80%;
+    line-height: 2px;
 }
-*:focus {
 
+*:focus {
     outline: none;
-    
-    }
-    
-    *::-moz-focus-inner {
-    
-    border: none;
-    
-    }
-/*::::::::::::::::::::::::::::::::::Main :::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-#main{
-    padding: 3px;
-    margin: 10px 0px;
-    width: 100%;
 }
+
+*::-moz-focus-inner {
+    border: none;
+}
+
+
+/*::::::::::::::::::::::::::::::::::Main :::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#main {
+    padding: 3px;
+    margin: 10px auto;
+    min-height: 550px;
+}
+
 
 /*::::::::::::::::::::::::::::::::::IMG::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-#imgContext{
-    width: 70%;
+
+#imgContext {
+    width: 50%;
     margin: 10px auto;
     display: block;
 }
+
+
 /*:::::::::::::::::::::::::::::::::::SAV:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-.log{
+
+.log {
     width: 50px;
 }
-.log:hover{
+
+.log:hover {
     cursor: pointer;
+    border-bottom: 2px solid #00FF00;
+}
+
+@media only screen and (max-width: 750px) {
+    #disquette{
+        display: none;
+    }
+
+    #mainP{
+        border: none;
+        padding: 0 ;
+        
+    }
+    
+    #main2{
+        border:none;
+        padding: 0; 
+        
+    }
+
+    #main {
+        min-height: 0px;
+    }
+
 }

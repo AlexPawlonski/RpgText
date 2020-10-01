@@ -100,13 +100,20 @@ class App extends React.Component {
     render() {
         return (
             <div id="wrapper">
-                <Header fInitSav = {this.initSav} fLoadSav = {this.loadSav} fvolume ={this.volume} volume = {this.state.volume} save={this.state.save}/>
-                <section id ="main">
-                    <Image save={this.state.save}/>
-                    <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
-                </section>
-                <Input envoi = {this.envoi} />
-                
+                <div id="mainP">
+                    <div id="main2">
+                        <Header fInitSav = {this.initSav} fLoadSav = {this.loadSav} fvolume ={this.volume} volume = {this.state.volume} save={this.state.save}/>
+                        <section id ="main">
+                            <Image save={this.state.save}/>
+                            <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
+                        </section>
+                        <Input envoi = {this.envoi} />
+                    </div>
+                    <div id="disquette">
+                        <div id="logopc"></div> <div id='right'><div className="ligne"></div> <div className="carre"></div> </div>
+                    </div>
+                      
+                </div>
             </div> 
         );
     }
