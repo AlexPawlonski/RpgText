@@ -1,8 +1,12 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import Moteur from './Class/moteur.js'
 import Image from './img/image.js'
+import Header from './img/header.js'
+import * as firebase from 'firebase'
+import config from './database/firebase.js'
 //import Music from './song/song.js'
 
 class App extends React.Component {
@@ -10,42 +14,65 @@ class App extends React.Component {
         super(props);
         this.state = {
             name: "",
-            result: "",
-            save: 0,
+            save: 0, 
+            result: "", 
             //mute: 'off',
         }
-    }
-/*
-    initSav = () => {
-        var save = this.state.save
-        var name = this.state.name
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "php/Model.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send("save=" + escape(save) + "name=" + escape(name));
+        firebase.initializeApp(config);
+        const userRef = firebase.database().ref();
+        this.messagesRef = userRef.child("player");
     }
 
-*/
+    loadSav = () =>{
+        this.messagesRef.on('value', snapshot => {
+            let log;
+            log = snapshot.val() ? Object.keys(snapshot.val()).map( key => {
+                return snapshot.val()[key];
+            }) :
+            log = [];
+            console.log(log);
+            log.forEach(value => {
+                if(value.name == this.state.name){
+                    this.setState({
+                        save: value.save
+                    })
+                    console.log(this.state.save);
+                    console.log(this.state.name);
+                }else{
+                    console.log('nop');
+                }
+            });
+            
+        })
+    }
+
+    initSav = () => {
+        const newPlayerKey = this.messagesRef.push().key;
+        let updates = {};
+        updates["/player/" + newPlayerKey] = {
+          name: this.state.name,
+          save: this.state.save
+        };
+        firebase
+          .database()
+          .ref()
+          .update(updates);
+          console.log(updates);
+    };
+
     envoi = (e) =>{
         console.log(this.state.save);
-        
-        /*if(this.state.save == 0){
-            this.loadDoc()
-        }else{*/
-            var input = e.newItemValue.toString()
-            if(this.state.name == ""){
-                this.setState({
-                    name: input,
-                    result: input,
-                })
-            }else{
-                this.setState({
-                    result: input,
-                })   
-            }
-        /*}*/
-        
-             
+        var input = e.newItemValue.toString()
+        if(this.state.name == ""){
+            this.setState({
+                name: input,
+                result: input,
+            })
+        }else{
+            this.setState({
+                result: input,
+            })   
+        }         
     };
 
     save = (e)=>{
@@ -57,24 +84,11 @@ class App extends React.Component {
             })
         }
     }
-/*
-    mute = () =>{
-        if (this.state.mute == "on") {
-            this.setState({
-                mute: "off"
-            }) 
-        }else{
-            this.setState({
-                mute: "on"
-            })
-        }
-    }
-    <Music save={this.state.save} volume={this.state.mute} fMute={this.mute} />
-*/
+
     render() {
         return (
             <div id="wrapper">
-                <h1>Bienvenu dans RpgTexter</h1> 
+                <Header fInitSav = {this.initSav} fLoadSav = {this.loadSav} />
                 <section id ="main">
                     <Image save={this.state.save}/>
                     <Moteur fSave = {this.save} result = {this.state.result} name = {this.state.name} save={this.state.save}/>
@@ -88,7 +102,6 @@ class App extends React.Component {
 
 
 class Input extends React.Component{
-
     onPush = (event) => {
         if(event.keyCode == 13){
             var newItemValue = this.refs.inputName.value;
@@ -107,4 +120,6 @@ class Input extends React.Component{
 }
 
 
+
 ReactDOM.render( <App />, document.getElementById('root'));
+

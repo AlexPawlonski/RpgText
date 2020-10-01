@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    color: chartreuse;
+    color: #00FF00;
     background-color: rgb(110, 110, 110);
     font-family: "initialFont";
     background-color: rgb(20, 20, 20);
@@ -20,6 +20,8 @@ h1{
     margin: 5px;
     text-align: center;
     text-decoration: underline;
+    display: flex;
+    align-items: center;
 }
 ul{
     margin: 0;
@@ -41,6 +43,11 @@ p{
 .Name{
     font-family: "Upfont" ;
 }
+/*:::::::::::::::::::::::::::::HEADER :::::::::::::::::::::::::::::::::::::::::::::::::::*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
 /*:::::::::::::::::::::::::::::ZONE INPUT ::::::::::::::::::::::::::::::::::::::::::::::*/
 #input label{
     padding: 0 3px ;
@@ -49,7 +56,7 @@ p{
 #input{
     font-size: 20px;
     font-family: "initialFont";
-    color: chartreuse;
+    color: #00FF00;
     background-color: rgb(20, 20, 20);
     border: none;
     width: 95%;
@@ -77,4 +84,11 @@ p{
     width: 70%;
     margin: 10px auto;
     display: block;
+}
+/*:::::::::::::::::::::::::::::::::::SAV:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.log{
+    width: 50px;
+}
+.log:hover{
+    cursor: pointer;
 }

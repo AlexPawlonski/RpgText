@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
+
 class Image extends React.Component{
     render(){
         let save = this.props.save;
@@ -23,4 +24,6 @@ class Image extends React.Component{
         );
     }
 }
+
+
 export default Image;
