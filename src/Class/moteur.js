@@ -6,7 +6,7 @@ class Moteur extends React.Component{
             if(this.props.name == "" ){ 
                 return(
                     <ul>
-                        <li>Enter votre nom : </li>
+                        <li>Enter votre <p className="Name">nom</p> de voyageur !</li>
                     </ul>
                 );
             }else{
@@ -31,8 +31,9 @@ class Moteur extends React.Component{
 
                 return(
                     <ul>
-                        <li>Bonjour <p className="Name">{name}</p>, préparer vous à entre dans Zaxarot !!</li>
-                        <li>Es-bien votre nom ?</li>
+                        <li>Bonjour <p className="Name">{name}</p>, Préparer vous à entrer dans <p className="Name">Zaxarot !!</p> </li>
+                        <li>Voulez-vous commencer une nouvelle partie ? </li>
+                        <li>Si vous avez déjà une partie à <p className="Name">continuer</p> cliquer sur la disquette. Vous pourrez la sauvegardé à tou moment en cliquant sur le parchemin.</li>    
                     </ul>
                 );   
             }
@@ -75,8 +76,8 @@ class Moteur extends React.Component{
 
             return(
                 <ul>
-                    <li>Vous être dans un foret du fin fond de zaxarote.</li> 
-                    <li>La lune est claire et le vent est calm, La sur un pière a vos pier ce trouve un signe.</li>
+                    <li>Vous être dans un foret du fin fond de <p className="Name">Zaxarote</p>.</li> 
+                    <li>La lune est claire et le vent est calm, La sur un père a vos pieds se trouve un signe.</li>
                     <li>Que fait vous ?</li>
                 </ul>
             );
@@ -105,9 +106,9 @@ class Moteur extends React.Component{
 
             return(
                 <ul>
-                    <li>Vous vous pencher sur la pierre, d'un regard intérogateur.</li>
-                    <li>Votre passer aussi riche fut été, ne vous permit pas d'identifier l'incription posser amème la roche.</li>
-                    <li>Mais, il semblai qu'un l'éger souvenir d'un vieux livre sur l'histoire de Zaxarot vous mis en grade d'un dangers.</li>
+                    <li>Vous vous penchez sur la pierre, d'un regard interrogateur.</li>
+                    <li>Votre passé aussi riche fut été, ne vous permit pas d'identifier l'inscription poser sur la roche.</li>
+                    <li>Mais il sembla qu'un léger souvenir d'un vieux livre sur l'histoire de <p className="Name">Zaxarot</p> vous mis en grade d'un danger.</li>
                     <li>Mais oserer vous y toucher, malegere cette étrange lumière verdatre ?</li>
                 </ul>
             );
@@ -133,9 +134,10 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>En regardant la pierre, vous vous dite quelle est bien grosse pour que vous puisier la predendre.</li>
-                    <li>Mais du bous des doit vous vous approcher de la pierre et une lumière un vert pale commança a y émaner,
-                        soudain un susaut d'ésitation vous envahi pouriez vous au moin la toucher ? </li>
+                    <li>En regardant la pierre, vous vous dites quelle est bien grosse pour que vous puissiez la predendre.</li>
+                    <li>Mais du bous des doit vous vous approcher de la pierre et une lumière un vert pale commença à y émaner,
+                    Soudain un sursaut d'hésitation, vous envahit pourriez vous au moins la toucher ? </li>
+                    
                 </ul>
             );
         }
@@ -160,9 +162,10 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Avec assurance vous toucher la pierre, ça lueur augementa d'un coup ! </li>
-                    <li>Un peu éblouie vous vous cacher les yeux avec votre bras, surpprit vous reculer d'un pas !</li>
+                    <li>Avec assurance, vous touchez la pierre, ça lueur augmenta d'un coup ! </li>
+                    <li>Un peu éblouie, vous vous cachez les yeux avec votre bras, surprîtes vous reculez d'un pas !</li>
                     <li>Que faite vous ?</li>
+                    
                 </ul>
             );
 
@@ -195,11 +198,10 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous raviser et vous reculer d'un pas, mais pensant qu'une pierre qui brillait au fin fond d'une forait. Pouvait avoir son importance 
-                        vour rercher dans votre petit packtage, un papier et un bou de charbon pour y noter les syboles inscri sur la pierre. </li>
-                    <li> </li>
-                    <li>Puis vous retourner sur le chemain principale, en avancant parmie les feillage et les prierre sur le chemin vous commancer à distinguer au loin parmie la pénonbre
-                         ce qui cemblait être un homme avec un chario tirer par deux énorme bufle. En aprochant il vous interpelle.</li>
+                    <li>Vous raviser et vous reculer d'un pas, mais pensant qu'une pierre qui brillait au fin fond d'une forêt.</li>
+                    <li>Pouvait avoir son importance, vous cherchez dans votre petit package, un papier et un bout de charbon pour y noter les symboles inscrit sur la pierre.
+                    Puis vous retourner sur le chemin principal, en avançant parmi les feuillages et les pierres sur le chemin vous commencez à distinguer au loin parmi la pénombre
+                    ce qui comblait être un homme avec un chariot tirer par deux énorme buffle. En approchant, il vous interpelle.</li>
                     <li>Que faite vous ?</li>
                 </ul>
             );
@@ -234,11 +236,11 @@ class Moteur extends React.Component{
 
             return(
                 <ul>
-                    <li>Vous passer votre chemain non sans un petite regettre, mais dans vos souvenir se trouvait une étrange chensation.</li>
-                    <li>Mais bon apres tous une pierre qui brille au fond d'une foret, c'est rien de spécial à zaxarote. </li> 
-                    <li>Vous avancer sur le chemain sombre éclairer par la lueur de la plaine lune, le vent se fesait frait. Vous vous dite que vous aurier surement du écouter votre petite maman quand elle vous à dis
-                        de prendre un plus gros pull.</li>
-                    <li>En avancant sur le centier vous appèrcever au loin ce qui cemblait être un homme avec un chario tirer par deux énorme bufle. En aprochant il vous interpelle.</li>
+                    <li>Vous passer votre chemin non sans un petit regret, mais dans vos souvenirs se trouvait, une étrange cessation.
+                    Mais bon après tous une pierre qui brille au fond d'une forêt, c'est rien de spécial à <p className="Name">Zaxarote</p>.</li>
+                    <li>Vous avancez sur le chemin sombre éclairé par la lueur de la pleine lune, le vent se faisait frais. Vous vous dite que vous auriez sûrement du écouter votre petite maman quand elle vous à dis
+                    de prendre un plus gros pull.</li>
+                    <li>En avançant sur le centier vous apercevez au loin ce qui comblait être un homme avec un chariot tiré par deux énorme buffle. En approchant, il vous interpelle.</li>
                     <li>Que faite vous ?</li>
                 </ul>
             );
@@ -264,9 +266,9 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous être sur vos garde et vous regarder autour de vous, il n'y avais pas grand chose à votre droit un petit chemin qui ramenait a la route principale.
-                        A votre gauche la foret s'étendais sur des mille mais vous d'istingé une petite clairière, surment un endroit pour faire parurer les bète.
-                        Dérrier vous la foret, et devant vous la pierre, qui maintenant que vous y pérer atention, vous remarquer que cette pière resenblais a un vielle stelle polie par le temp. 
+                    <li>Vous être sur vos gardes et vous regarder autour de vous, il n'y avait pas grand chose à votre droit un petit chemin qui ramenait a la route principale.
+                        À votre gauche, la forêt s'étendait sur des mille, mais vous distinguez une petite clairière, sûrement un endroit pour faire pâturer les bêtes.
+                        Derrière vous la forêt, et devant vous la pierre, qui maintenant que vous y péter attention, vous remarquer que cette prière ressemblais a un vielle stel polie par le temps.
                     </li>
                     <li>Que faite vous ?</li>
                 </ul>
@@ -278,17 +280,33 @@ class Moteur extends React.Component{
         if(this.props.save == 8){
             let input = this.props.result
 
-            let index81 = ['toucher', 'éffleurer ', 'touche']
+            let index81 = ['demander', 'demande', 'question', 'posa', ]
             index81.forEach(element => {
                 if(input.includes(element)){
-                    let save = 1;
+                    let save = 4;
+                    this.props.fSave({save}); 
+                }
+            });
+            let index82 = ['iniore', 'part', 'passe', 'chemain', 'cours', 'écrate']
+            index82.forEach(element => {
+                if(input.includes(element)){
+                    let save = 3;
+                    this.props.fSave({save}); 
+                }
+            });
+            let index83 = ['aproche', 'approche ', 'approcher', 'reagarder', 'regarde', 'voir', 'prudance',]
+            index83.forEach(element => {
+                if(input.includes(element)){
+                    let save = 5;
                     this.props.fSave({save}); 
                 }
             });
             return(
                 <ul>
-                    <li>vous fuyer r'apidament de l'emplacement de la la pierre, sans vous retourner vous courer dans une direction inconue, car dans votre fuite vous n'avier pas eu le temps de savoir un vous alier.
-                        Par un heureux assare ou par chance vous  </li>
+                    <li>Vous fuyez rapidement de l'emplacement de la pierre, sans vous retourner vous courez dans une direction inconnue, car dans votre fuite vous n'aviez pas eu le temps de savoir un vous aller.
+                    Par un heureux hasard ou par chance, vous arrivez sur le chemin. hasard ou par chance vous arriver sur le chemin.</li>
+                    <li>En avançant sur le centier vous apercevez au loin ce qui comblait être un homme avec un chariot tiré par deux énorme buffle. En approchant, il vous interpelle.</li>
+                    <li>Que faite vous ?</li>
                 </ul>
             );
 
@@ -309,8 +327,8 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous vous écrater de l'homme, passant a coter sans le regarder. il vous regadait avec un hère dubitatif 
-                    puis il marmona un truc incontréhensible sur une famille et une sertène coureuse de renpare.</li>
+                    <li>Vous vous écarter de l'homme, passant a coter sans le regarder. Il vous regardait avec un hère dubitatif.
+                    Puis il marmonna un truc incompréhensible sur une famille et <p className="Name">une certaines coureuse de rempart!</p></li>
                 </ul>
             );
 
@@ -319,7 +337,7 @@ class Moteur extends React.Component{
         if(this.props.save == 10){
             let input = this.props.result
 
-            let index111 = ['oui', 'mon', 'prenom', this.props.name, 'raison']
+            let index111 = ['oui', 'mon', 'prenom', this.props.name, 'raison', 'appel']
             index111.forEach(element => {
                 if(input.includes(element)){
                     let save = 1;
@@ -342,11 +360,10 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous aprocher de l'homme, et vous vous écrier non sans assurance:</li>
-                    <li>Holla mon brave qui être vous, que faite vous sur cette route a la nuit tonber ? et que me vouler vous ?</li>
-                    <li> </li>
-                    <li>Bonsoir à vous voyageur, je suis Colérer Stérolamm un inble fermier. Et si mon attitude vous semble bizzare je ne peu que vous dir que pour des ceurelle de clocher je suis obliger je faire mon l'abeur de nuit.</li>
-                    <li>Mais dit moi plutôt votre nom ? par les temps qui coure à zaxarot il est bon de savoir à qui on a faire. </li>
+                    <li>Vous approcher de l'homme, et vous vous écriez non sans assurance :</li>
+                    <li>Holla mon brave qui être vous, que faite vous sur cette route a la nuit tomber ? Et que me voulez-vous ?</li>
+                    <li>Bonsoir à vous voyageur, je suis Colérer Stérolamm un humble fermier. Et si mon attitude vous semble bizarre je ne peu que vous dire que pour des cruelles de clocher, je suis obligé, je faire mon labeur de nuit.</li>
+                    <li>Mais dit moi plutôt votre nom ? par les temps qui courent à zaxarot il est bon de savoir à qui on à faire.</li> 
                 </ul>
             );
 
@@ -378,8 +395,8 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Bonsoir à vous voyageur, je suis Colérer Stérolamm un inble fermier. Et si mon attitude vous semble bizzare je ne peu que vous dir que pour des ceurelle de clocher je suis obliger je faire mon l'abeur de nuit.</li>
-                    <li>Mais dit moi plutôt votre nom ? par les temps qui coure à zaxarot il est bon de savoir à qui on a faire. </li>
+                    <li>Bonsoir à vous voyageur, je suis <p className="Name">Colérer Stérolamm</p> un humble fermier. Et si mon attitude vous semble bizarre je ne peu que vous dire que pour des cruelles de clocher, je suis obligé, je faire mon labeur de nuit.</li>
+                    <li>Mais dit moi plutôt votre nom ? par les temps qui courent à <p className="Name">Zaxarot</p> il est bon de savoir à qui on à faire.</li> 
                 </ul>
             );
 
@@ -406,16 +423,15 @@ class Moteur extends React.Component{
             
             return(
                 <ul>
-                    <li>Je suis <p className="Name">{name}</p>, Vous dite ce nom mais vous ne savier pas trop quoi y mettre aa ça suite. Mais vous lui réponder quand même, Je ne suis qu'un voyageur venant de l'écranger, et li me semble que je vien des frontier de l'est.</li>
-                    <li>Oh vous être donc un voyageur des terre de l'est par dela les montage de Mortifierr, Dit l'homme visiblement un peu déconcerter par votre réponce. Mais dit moi ce n'est pas la porte a coter surtout a pied.
-                        m'enfin, tant que vous n'être pas un de Bession-Deskart qui me fond tent de missère et me force a voyager sur les sombre chemain éclairer pare la lune.
-                    </li>
-                    <li> </li>
-                    <li>Sur c'est mot vous vous dit que cette histoire étais bien étrange. Bref, séclama l'homme ce qui vous tira de votre réflection, puis il enchèna, c'est histoire de doit pas trop vous intéresser.</li>
-                    <li>Mais dite moi, j'ai trouver ça durant mon petit voyage dans un clairière par la ou vous vener. Peut être que vous voyageur saver vous ce que c'est ? L'homme vous tendie un petite objet, il était d'une forme carer et lisse d'un noire profond.
-                        un de c'est arraite il y avait quelle que petit trou. Et sur une autre plus longue il y avais  de petites bosses très abrutes qui quand on passait le doit dessus l'anblait safèsser </li>
-                    <li>Vous voyant regarder l'ojet avec insitance l'homme vous dit, Si vous vouler vous pouver le prendre il mes d'aucune utilister et si j'amais vous trouver quel qu'un pour vous renseigner, puisse t'il égailler votre journer .
-                        Mais je ne vous forsse pas et vous faite ce que vous vouller ?</li>
+                    <li>Je suis <p className="Name">{name}</p>, vous dite ce nom, mais vous ne saviez pas trop quoi y mettre a ça suite. Mais vous lui répondez quand même, je ne suis qu'un voyageur venant de l'étranger, et li me semble que je viens des frontière de l'est.</li>
+                    <li>Oh vous être donc un voyageur des terres de l'est par delà les montages de Mortifierr, Dit l'homme visiblement un peu déconcerter par votre réponse. Mais dit moi ce n'est pas la porte a coter surtout a pied.
+                        M'enfin, tant que vous n'être pas un de <p className="Name">Bession-Deskart </p>qui me fond tant de misère et me force a voyager sur les 
+                        sombre chemin éclairer pare la lune.</li>
+                    <li>Sur ces mots, vous vous dites que cette histoire était bien étrange. Bref, s'exclama l'homme ce qui vous tira de votre réflexion, puis il enchaîna, cette histoire de doit pas trop vous intéressez.</li>
+                    <li>Mais dite moi, j'ai trouvé ça durant mon petit voyage dans une clairière par la ou vous venez. Peut-être que vous voyageur savez vous ce que c'est ? L'homme vous tendit un petit objet, il était d'une forme carré et lisse d'un noir profond.
+                        Un de c'est arrêtent, il y avait quelle que petit trou. Et sur une autre plus longue, il y avait de petites bosses très abruptes qui quand on passait le doit dessus s'amblaient safèsser. </li>
+                    <li>Vous voyant regarder l'objet avec insistance l'homme vous dit, Si vous voulez vous pouvez le prendre il mes d'aucune utiliser et si jamais vous trouver quel qu'un pour vous renseigner, puisse t'il égailler votre journée.
+                        Mais je ne vous force pas et vous faite ce que vous voulez ?</li>
                 </ul>
             );
 
@@ -441,9 +457,12 @@ class Moteur extends React.Component{
             
             return(
                 <ul>
-                    <li>Je ne vous dirait pas mon, homme ! L'homme vous regardat d'un yeux énerver et vous dit avant de continuer ça route, Encore un de c'est fils de courause de renpare de cher les Bession-Deskart.
-                        Je ne vous souaite pas une bonne nuit ! Il séloinia de vous d'un pas loure suivie de son chario.
+                    <li>
+                    Je ne vous dirais pas mon, homme ! L'homme vous regarda d'un œil énerver et vous dit avant de continuer ça route, Encore un de ces fils de coureuse de rempart de cher les <p className="Name">Bession-Deskart</p>.
+                    Je ne vous souhaite pas une bonne nuit ! Il s'éloinia de vous d'un pas loure suivie de son chariot.
                     </li>
+                    <li>Vous vous éloigniez de l'homme qui finit par disparaître dans les ténèbres.</li>
+                    <li>Vous arrivez au village de Sastonne</li>
                 </ul>
             );
 
@@ -461,8 +480,8 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous vous éloignier de l'homme qui fini par disparaitre dans les ténèbre.</li>
-                    <li>Vous arriver au village de Sastonne</li>
+                    <li>Vous vous éloigniez de l'homme qui finit par disparaître dans les ténèbres.</li>
+                    <li>Vous arrivez au village de <p className="Name">Sastonne</p></li>
                 </ul>
             );
         }
@@ -479,9 +498,9 @@ class Moteur extends React.Component{
             });
             return(
                 <ul>
-                    <li>Vous vous éloignier de l'homme aprait avoir mis votre butin dans votre sac et en regardant derière vous, vous d'intingué l'homme qui fini
-                     par disparaitre dans les ténèbre.</li>
-                     <li>Vous arriver au village de Sastonne</li>
+                    <li>Vous vous éloigner de l'homme, apprêt avoir mis votre butin dans votre sac et en regardant dernière vous, vous d'intingué l'homme qui finit
+                        pars disparaître dans les ténèbres.</li>
+                     <li>Vous arriver au village de <p className="Name">Sastonne</p></li>
                 </ul>
             );
         }
@@ -509,8 +528,8 @@ class Moteur extends React.Component{
 
         return(
             <ul>
-                <li>Vous être mort! vous n'avez pas sus venir a bou de Zaxarot !!</li>
-                <li>voulez vous revivre ?</li>
+                <li>Vous être mort ! Vous n'avez pas su venir a bout de <p className="Name">Zaxarot</p> !!</li>
+                <li>Voulez-vous revivre ?</li>
             </ul>
         ); 
     }   
@@ -519,7 +538,7 @@ class Moteur extends React.Component{
         if(this.props.save >= 404){
             return(
                 <ul>
-                    <li>Je n'est pas compprid reformuléer SVP ?</li> 
+                    <li>Je n'ai pas compris reformuler SVP ?</li> 
                 </ul>
             );
         }
