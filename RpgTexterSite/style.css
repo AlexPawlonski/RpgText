@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Xambdoria";
+    src: url('img/Xambdoria.ttf');
+}
+@font-face {
+    font-family: "finalf";
+    src: url('img/finalf.ttf');
+}
+@font-face {
+    font-family: "Sabena";
+    src: url('img/Sabena.ttf');
+}
+
+@font-face {
+    font-family: "initialFont";
+    src: url('img/Minecraft.ttf');
+}
+
+@font-face {
+    font-family: "UpFont";
+    src: url('img/Upcase.ttf');
+}
+body{
+    background-image: url(img/fonthomepage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    border-bottom: white solid 2px;
+    width: 100%;
+    margin-bottom:20px ;
+    
+}
+nav a {
+    color: white;
+}
+nav a:hover {
+    color: #00ff00;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 10px;
+}
+#siteheader{
+    background-image: url(img/fondHeader.jpg);
+    background-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+#siteheader h1{
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: 150px;
+    text-decoration: none;
+    margin: 50px;
+    font-family: "Sabena";
+    
+}
+#wrapper{
+    padding: 0 !important;
+}
+#mainhome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: solid white 2px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 600px;
+}
+#mainhome h2{
+    font-size: 40px;
+}
+
+#imgreact{
+    width: 300px;
+}
+footer{
+    background-color: black;
+    border-top: white solid 2px;
+    width: 100%;
+    margin-top:20px ;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Apli*/
+/*::::::::::::::::::::::::::::::::GENERAL:::::::::::::::::::::::::::::::::::::::::::::*/
+body {
+    margin: 0;
+    padding: 0;
+    color: #00FF00;
+    background-color: rgb(110, 110, 110);
+    font-family: "initialFont";
+    background-color: rgb(20, 20, 20);
+    font-size: 15px;
+    cursor: text;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    max-width: 1200px;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    display: inline;
+}
+
+
+.Name {
+    font-family: "Upfont";
+}
+/*:::::::::::::::::::::::::::::DESSIN::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#mainP{
+    border: #00FF00 3px solid;
+    padding: 30px 30px 50px 50px ;
+    
+}
+
+#main2{
+    border: #00FF00 3px solid;
+    padding: 30px; 
+    
+}
+#right{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#disquette{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ligne{
+    border: #00FF00 3px solid;
+    background-color: #00FF00;
+    width: 35%;
+    height: 15px;
+}
+.carre{
+    border: #00FF00 3px solid;
+    background-color: #00FF00;
+    width:20%;
+    height: 40px;
+}
+#logopc{
+    border: #00FF00 3px solid;
+    width: 50px;
+    height: 50px;
+    
+}
+/*:::::::::::::::::::::::::::::HEADER :::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*:::::::::::::::::::::::::::::ZONE INPUT ::::::::::::::::::::::::::::::::::::::::::::::*/
+
+label {
+    padding: 0 3px;
+    font-size: 22px;
+}
+
+#input {
+    font-size: 20px;
+    font-family: "initialFont";
+    color: #00FF00;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    width: 80%;
+    line-height: 2px;
+}
+
+*:focus {
+    outline: none;
+}
+
+*::-moz-focus-inner {
+    border: none;
+}
+
+
+/*::::::::::::::::::::::::::::::::::Main :::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#main {
+    padding: 3px;
+    margin: 10px auto;
+    min-height: 550px;
+}
+
+
+/*::::::::::::::::::::::::::::::::::IMG::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#imgContext {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+
+/*:::::::::::::::::::::::::::::::::::SAV:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.log {
+    width: 50px;
+}
+
+.log:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #00FF00;
+}
+
+@media only screen and (max-width: 750px) {
+    #disquette{
+        display: none;
+    }
+
+    #mainP{
+        border: none;
+        padding: 0 ;
+        
+    }
+    
+    #main2{
+        border:none;
+        padding: 0; 
+        
+    }
+
+    #main {
+        min-height: 0px;
+    }
+
+}

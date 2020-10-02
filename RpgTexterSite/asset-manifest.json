@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4ee7ebbe.chunk.css",
+    "main.js": "./static/js/main.ab09d6df.chunk.js",
+    "main.js.map": "./static/js/main.ab09d6df.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.9fb96ed3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.9fb96ed3.js.map",
+    "static/js/2.42a36f32.chunk.js": "./static/js/2.42a36f32.chunk.js",
+    "static/js/2.42a36f32.chunk.js.map": "./static/js/2.42a36f32.chunk.js.map",
+    "index.html": "././template/header.html",
+    "precache-manifest.398ce3ede5ae35f36610749ec2714370.js": "./precache-manifest.398ce3ede5ae35f36610749ec2714370.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.4ee7ebbe.chunk.css.map": "./static/css/main.4ee7ebbe.chunk.css.map",
+    "static/js/2.42a36f32.chunk.js.LICENSE.txt": "./static/js/2.42a36f32.chunk.js.LICENSE.txt",
+    "static/media/style.css": "./static/media/Upcase.f03febe5.ttf",
+    "static/media/song1.mp3": "./static/media/song1.4680beb2.mp3",
+    "static/media/song2.mp3": "./static/media/song2.0920de79.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fb96ed3.js",
+    "static/js/2.42a36f32.chunk.js",
+    "static/css/main.4ee7ebbe.chunk.css",
+    "static/js/main.ab09d6df.chunk.js"
+  ]
+}
